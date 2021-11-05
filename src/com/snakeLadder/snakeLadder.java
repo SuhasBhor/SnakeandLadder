@@ -5,7 +5,8 @@ import java.util.Random;
 public class snakeLadder {
 	public static void main(String[] args) {
 		int position = 0;  //initial position
-		final int winningPosition = 100;  //winning position
+		int winningPosition = 100;  //winning position
+		int diceRollCount=0;
 
         //using while loop
 		while (position <= winningPosition) {
@@ -41,6 +42,8 @@ public class snakeLadder {
                     System.out.println("Current Position is ==>" + position);
                 	}
             }
+            diceRollCount++;
+            System.out.println("How Many Times Dice Roll " +diceRollCount);
 		}
     }
 }
